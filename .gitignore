@@ -8,6 +8,7 @@ venv/
 # Data files
 *.csv
 *.xlsx
+!kunes upload contacts for api.xlsx
 *.xls
 *.txt
 !requirements.txt
