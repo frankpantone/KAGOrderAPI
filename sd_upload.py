@@ -88,22 +88,22 @@ COL_ADDRESS    = 13     # N  – Dealership address (delivery street)
 COL_CITY       = 14     # O  – City (delivery)
 COL_STATE      = 15     # P  – State (delivery)
 COL_ZIP        = 16     # Q  – Postal Code (delivery)
-COL_VIN        = 23     # X  – VIN
-COL_YEAR       = 29     # AD – Year
-COL_MAKE       = 30     # AE – Make
-COL_MODEL      = 31     # AF – Model
-COL_LOC_NAME   = 77     # BZ – Location Name (pickup name)
-COL_RHP_ADDR   = 82     # CE – RHP Address (pickup street)
-COL_RHP_CITY   = 83     # CF – RHP City (pickup)
-COL_RHP_STATE  = 84     # CG – RHP State (pickup)
-COL_RHP_ZIP    = 85     # CH – RHP Postal Code (pickup)
-COL_PU_CONTACT = 125    # DV – Pickup Location Contact Name
-COL_PU_EMAIL1  = 126    # DW – Pickup Location Email
-COL_PU_EMAIL2  = 127    # DX – Pickup Location Email 2
-COL_PU_EMAIL3  = 128    # DY – Pickup Location Email 3
-COL_PU_PHONE   = 129    # DZ – Pickup Location Phone Number
+COL_VIN        = 28     # AC – VIN
+COL_YEAR       = 34     # AI – Year
+COL_MAKE       = 35     # AJ – Make
+COL_MODEL      = 36     # AK – Model
+COL_LOC_NAME   = 82     # CE – Location Name (pickup name)
+COL_RHP_ADDR   = 87     # CJ – RHP Address (pickup street)
+COL_RHP_CITY   = 88     # CK – RHP City (pickup)
+COL_RHP_STATE  = 89     # CL – RHP State (pickup)
+COL_RHP_ZIP    = 90     # CM – RHP Postal Code (pickup)
+COL_PU_CONTACT = 131    # EB – Pickup Location Contact Name
+COL_PU_EMAIL1  = 132    # EC – Pickup Location Email
+COL_PU_EMAIL2  = 133    # ED – Pickup Location Email 2
+COL_PU_EMAIL3  = 134    # EE – Pickup Location Email 3
+COL_PU_PHONE   = 135    # EF – Pickup Location Phone Number
 
-MAX_COL_INDEX  = 129
+MAX_COL_INDEX  = 135
 
 # Vehicle type classification based on model keywords
 _SUV_KEYWORDS = {
@@ -444,7 +444,7 @@ def load_matched_records(
     delivery_overrides: Optional[Dict[str, Dict[str, str]]] = None,
 ) -> List[Dict[str, str]]:
     """
-    Read raw.csv and return dicts for rows whose VIN (col 23) is in *vins*.
+    Read raw.csv and return dicts for rows whose VIN (col AC / index 28) is in *vins*.
 
     When *delivery_overrides* is provided, any row whose Dealership (col J)
     matches a key in the lookup will have its delivery fields replaced with
