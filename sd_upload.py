@@ -92,18 +92,18 @@ COL_VIN        = 28     # AC – VIN
 COL_YEAR       = 34     # AI – Year
 COL_MAKE       = 35     # AJ – Make
 COL_MODEL      = 36     # AK – Model
-COL_LOC_NAME   = 82     # CE – Location Name (pickup name)
-COL_RHP_ADDR   = 87     # CJ – RHP Address (pickup street)
-COL_RHP_CITY   = 88     # CK – RHP City (pickup)
-COL_RHP_STATE  = 89     # CL – RHP State (pickup)
-COL_RHP_ZIP    = 90     # CM – RHP Postal Code (pickup)
-COL_PU_CONTACT = 131    # EB – Pickup Location Contact Name
-COL_PU_EMAIL1  = 132    # EC – Pickup Location Email
-COL_PU_EMAIL2  = 133    # ED – Pickup Location Email 2
-COL_PU_EMAIL3  = 134    # EE – Pickup Location Email 3
-COL_PU_PHONE   = 135    # EF – Pickup Location Phone Number
+COL_LOC_NAME   = 83     # CF – Location Name (pickup name)
+COL_RHP_ADDR   = 88     # CK – RHP Address (pickup street)
+COL_RHP_CITY   = 89     # CL – RHP City (pickup)
+COL_RHP_STATE  = 90     # CM – RHP State (pickup)
+COL_RHP_ZIP    = 91     # CN – RHP Postal Code (pickup)
+COL_PU_CONTACT = 132    # EC – Pickup Location Contact Name
+COL_PU_EMAIL1  = 133    # ED – Pickup Location Email
+COL_PU_EMAIL2  = 134    # EE – Pickup Location Email 2
+COL_PU_EMAIL3  = 135    # EF – Pickup Location Email 3
+COL_PU_PHONE   = 136    # EG – Pickup Location Phone Number
 
-MAX_COL_INDEX  = 135
+MAX_COL_INDEX  = 136
 
 # Vehicle type classification based on model keywords
 _SUV_KEYWORDS = {
